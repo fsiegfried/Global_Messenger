@@ -19,6 +19,7 @@ namespace GlobalMessenger
 			bundles.IgnoreList.Ignore("*-vsdoc.js");
 			bundles.IgnoreList.Ignore("*.debug.js", OptimizationMode.WhenEnabled);
 
+            //Add bundles
 			bundles.Add(new ScriptBundle("~/bundles/antiforgerytoken").Include("~/Scripts/app/antiforgerytoken.js"));
 			bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include("~/Scripts/bootstrap.js"));
 			bundles.Add(new ScriptBundle("~/bundles/kendoui").Include(
