@@ -1,0 +1,39 @@
+﻿@model GlobalMessenger.ViewModel.UserLogViewModel
+
+@{
+    ViewBag.Title = "Account Log";
+    ViewBag.Active = "Admin";
+}
+
+<h1>Account Log</h1>
+
+<p>Viewing ten most recent log entries for @ViewBag.UserName</p>
+
+@if (Model.UserLogs.Any())
+{
+    <p>If you suspect the account has been compromised, please disable the account or change the password immediately</p>
+
+    <table id="userLogTable" class="table">
+        <tr>
+            <th>Created Date</th>
+            <th>Description</th>
+        </tr>
+
+        @foreach (var item in Model.UserLogs)
+        {
+            <tr>
+                <td>@item.CreatedDateUtc.ToLocalTime().ToString("dd/MM/yyyy HH:mm:ss")</td>
+                <td>@Html.DisplayFor(modelItem => item.Description)</td>
+            </tr>
+        }
+    </table>
+
+    <hr />
+    
+}
+else
+{
+    <p>No activity has been recorded against this account</p>
+}
+
+

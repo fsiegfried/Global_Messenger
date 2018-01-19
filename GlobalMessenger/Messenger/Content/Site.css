@@ -1,0 +1,106 @@
+﻿html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 25px;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* buttons and links extension to use brackets: [ click me ] */
+.btn-bracketed::before {
+    display: inline-block;
+    content: "[";
+    padding-right: 0.5em;
+}
+
+.btn-bracketed::after {
+    display: inline-block;
+    content: "]";
+    padding-left: 0.5em;
+}
+
+ul.nav > li.dropdown {
+    top: 5px;
+}
+
+.labelBold {
+    font-weight: 700;
+}
+
+.shortcutKey {
+    text-decoration: underline;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #e80c4d;
+    font-weight: bold;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #e80c4d;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #e80c4d;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+/* Navbar */
+
+.skip-link {
+    left: -100%;
+    position: absolute;
+}
+
+.skip-link:focus {
+    left: 50%;
+}
+
+#navBarContainer {
+    margin-top: 45px;
+}
+
+/* Override bootstrap styles */
+a:focus, a:hover {
+    outline-color: #000000;
+    outline-width: 1px;
+    outline-style: dotted;
+}
+
+.btn:focus, .btn:hover {
+    outline-color: #000000;
+    outline-width: 1px;
+    outline-style: dotted;
+}
+

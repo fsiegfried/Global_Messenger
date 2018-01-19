@@ -1,0 +1,20 @@
+﻿<div id="divContainer">
+    <div id="divChat" class="chatRoom">
+        <div class="title">
+            Welcome to the News Exchanger Room {{authentication.userName}}
+        </div>
+        <div class="content">
+            <div id="divChatWindow" class="chatWindow">
+            </div>
+            <div id="divusers" class="users">
+            </div>
+        </div>
+        <div class="messageBar">
+            <input class="textbox" type="text" id="txtMessage" />
+            <input id="btnSendMsg" type="button" value="Send" class="submitButton" />
+        </div>
+    </div>
+
+    <input id="hdId" type="hidden" />
+    <input id="hdUserName" type="hidden" value={{authentication.userName}} />
+</div>

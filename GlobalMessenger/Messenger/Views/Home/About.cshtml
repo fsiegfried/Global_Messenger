@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "About";
+    ViewBag.Active = "Home";
+}
+
+<hgroup class="title">
+    <h1>@ViewBag.Title.</h1>
+    <h2>@ViewBag.Message</h2>
+</hgroup>
+
+<article>
+    <p>This project was created by John Staveley 28/01/2015</p>
+    <p>
+        Predefined users in the system:
+        <ul><li>Admin@admin.com - xsHDjxshdjkKK917&</li><li>User@user.com - x12a;pP02icdjshER</li></ul>
+    </p>
+</article>
+
+<aside>
+    <h3>Aside Title</h3>
+    <p>
+        Use this area to provide additional information.
+    </p>
+    <ul>
+        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+        <li>@Html.ActionLink("About", "About", "Home")</li>
+        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+    </ul>
+</aside>
